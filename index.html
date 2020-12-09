@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BudgetApp</title>
+    <link rel="stylesheet" href="newBudget.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <section class="set_budget">
+        <div class="budget_head">
+          <h2>Available Budget for <span class="month">%Month%</span></h2>
+        </div>
+      </section>
+      <section class="budget">
+        <div class="budget_prt">
+          <div class="budget_title">Budget</div>
+          <div class="logo"><img src="naira.png" alt="money" /></div>
+          <div class="budget_value">0</div>
+        </div>
+        <div class="income_prt">
+          <div class="income_title">Income</div>
+          <div class="logo"><img src="naira.png" alt="money" /></div>
+          <div class="income_value">0</div>
+        </div>
+        <div class="expense_part">
+          <div class="expense_title">Expense</div>
+
+          <div class="logo"><img src="naira.png" alt="money" /></div>
+          <div class="expense_value">0</div>
+        </div>
+      </section>
+    </header>
+
+    <main class="bottom">
+      <section class="exp_inc_form">
+        <div class="form">
+          <div class="select_type">
+            <select class="type">
+              <option value="income" selected>income</option>
+              <option value="expense">expense</option>
+            </select>
+          </div>
+          <div class="input_item">
+            <h3>Item Description</h3>
+            <input type="text" class="item_input" />
+            <div>
+              <h3>Amount</h3>
+              <input type="number" class="item_value" />
+            </div>
+            <button class="enter">enter</button>
+          </div>
+        </div>
+      </section>
+      <section class="exp_inc_list">
+        <div class="income_panel">
+          <h2>Income</h2>
+          <div class="income_list">
+            <!----
+                <div class="item" id="income-0">
+                    <div class="item_name">Salary</div>
+                    <div class="item_amount">0</div>
+                    <div class="item_delete">
+                        <button class="btn_del">x</button>
+                    </div>
+
+                </div>
+                 -->
+          </div>
+        </div>
+        <div class="expense_panel">
+          <h2>Expense</h2>
+          <div class="expense_list">
+            <!---
+                <div class="item" id="expense-0">
+                    <div class="item_name">Salary</div>
+                    <div class="item_amount">0</div>
+                    <div class="item_delete">
+                        <button class="btn_del">x</button>
+                    </div>
+
+                </div>
+                 -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="newBudget.js"></script>
+  </body>
+</html>
